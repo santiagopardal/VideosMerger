@@ -51,7 +51,7 @@ if __name__ == '__main__':
 
         print("Merging videos in", folder)
         folder = os.path.abspath(folder)
-        videos = [Video(os.path.join(folder, path)) for path in sorted(os.listdir(folder)) if path.endswith('.mp4')]
+        videos = [os.path.join(folder, path) for path in sorted(os.listdir(folder)) if path.endswith('.mp4')]
         factory = VideoFactory()
         merger = VideoMerger(VideosIterator(videos, factory))
         merger.merge(merged_videos_path)
