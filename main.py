@@ -43,7 +43,7 @@ class VideoFactory:
 
 
 logging.basicConfig(
-    filename='camerai_merger.log',
+    filename='merger.log',
     filemode='a',
     level=logging.INFO,
     format="{asctime} {levelname:<8} {message}",
