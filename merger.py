@@ -1,5 +1,5 @@
 from cv2 import VideoWriter, VideoWriter_fourcc
-from videos_iterator import VideosIterator
+from libs.VideosMerger import VideosIterator
 
 
 class VideoMerger:
